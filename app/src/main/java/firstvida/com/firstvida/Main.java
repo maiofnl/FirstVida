@@ -52,7 +52,7 @@ public class Main extends ActionBarActivity
         // update the main content by replacing fragments
         FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction()
-                .replace(R.id.container, PlaceholderFragment.newInstance(position + 1))
+                .replace(R.id.container, Fragment2.newInstance(position + 1))
                 .commit();
     }
 
